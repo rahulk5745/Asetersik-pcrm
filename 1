@@ -1,0 +1,33 @@
+let helpers = require("../helpers");
+let { config } = require("dotenv");
+//client.js
+var Client = require('socket.io-client');
+config();
+
+let sock = {};
+var initTime;
+
+sock.send = (req, res, next)=>{
+	console.log(`${JSON.stringify(req.params)}`);
+	
+	var custNo = req.params.custNo;
+	var agentId = req.params.agentId;
+	var did = req.params.did;
+	var uid = req.params.uniqueId;
+
+var socket = Client.connect('http://localhost:3001', {reconnect: false});
+
+// Add a connect listener
+socket.on('connect', function (socket) {
+    	console.log('Connected!');
+});
+	let eventJson = {
+		"extension":agentId,
+		"data":[custNo,did,"Inbound",uid]
+	};
+	socket.emit("sendEvent", eventJson);
+	socket.close();
+	res.send('OK');
+}
+
+module.exports = sock;

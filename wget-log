@@ -1,0 +1,11 @@
+--2022-01-13 17:30:52--  http://localhost:5003/api/v1/sock
+Resolving localhost (localhost)... 127.0.0.1
+Connecting to localhost (localhost)|127.0.0.1|:5003... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2 [text/html]
+Saving to: ‘sock’
+
+sock                               0%[                                                         ]       0  --.-KB/s               sock                             100%[========================================================>]       2  --.-KB/s    in 0s      
+
+2022-01-13 17:30:52 (255 KB/s) - ‘sock’ saved [2/2]
+

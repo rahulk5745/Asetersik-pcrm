@@ -1,0 +1,13 @@
+Channel: local/7087561823@predictive-dialing
+Context: predictive-dialing-answered
+Extension: 7087561823
+Priority: 1,
+Callerid: 
+Setvar: queuename=penguin_dialer-61cab1fe602d2
+Setvar: trunk_name=penguincrm
+Setvar: applicationName=penguin_dialer
+Setvar: queuedid=+12055286336
+Setvar: customer_number=7087561823
+Setvar: apiurl=http://www.google.com
+Setvar: id=21232
+Setvar: module_name=leads

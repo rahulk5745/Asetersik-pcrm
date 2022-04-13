@@ -16,23 +16,7 @@ const {parse, stringify} = require('flatted');
 // const cluster = "cluster0.jtikb.mongodb.net";
 // const dbname = "dev_sendclap";
 
-/*
-const username = "penguin";
-const password = "sA1n0XmpmWXBwEQamA49hmiXBX6W4xaHeA7oXKTxb9UbZOa3";
-const cluster = "34.93.185.159";
-const dbname = "asterisk";
 
-// mongodb://penguin:sA1n0XmpmWXBwEQamA49hmiXBX6W4xaHeA7oXKTxb9UbZOa3@35.200.251.77:27017/?authSource=admin&readPreference=primary&appname=MongoDB%20Compass&directConnection=true&ssl=false
-
-mongoose.connect(
-  // `mongodb+srv://${username}:${password}@${cluster}/${dbname}?authSource=admin&replicaSet=atlas-66mnot-shard-0&w=majority&readPreference=primary&appname=MongoDB%20Compass&retryWrites=true&ssl=true`, 
-  ` mongodb://${username}:${password}@${cluster}:27017/${dbname}?authSource=admin&readPreference=primary&appname=MongoDB%20Compass&directConnection=true&ssl=false`,
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-  }
-);
-*/
 mongoose.connect('mongodb://127.0.0.1:27017/authenticate-api', {
   useUnifiedTopology: true,    
 // useNewUrlParser: true,
